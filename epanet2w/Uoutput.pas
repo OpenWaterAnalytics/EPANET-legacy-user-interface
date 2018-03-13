@@ -115,7 +115,7 @@ const
   MagicNumber = 516114521; //File signature
 
 {*** Changed 7/3/07 ***}
-  Version     = 20012;     //Solver version number                              //(2.00.12 - LR)
+  Version     = 20100;     //Solver version number  //Initially 20012      Modified by Asaph                       //(2.00.12 - LR)
   RECORDSIZE  = 4;         //Byte size of each record
   IDSIZE      = 32;        //Size of ID strings
 
