@@ -171,7 +171,7 @@ begin
       aNode := Node(i,j);
       with aNode do
         if (X <> MISSING) and (Y <> MISSING) then
-          Writeln(F, Format(' %-16s'#9'%-16f'#9'%-16f',[slist[j],X,Y]));
+          Writeln(F, Format(' %-16s'#9'%-16g'#9'%-16g',[slist[j],X,Y]));
     end;
   end;
   Writeln(F);
@@ -186,7 +186,7 @@ begin
       aVertex := Link(i,j).Vlist;
       while aVertex <> nil do
       begin
-        Writeln(F, Format(' %-16s'#9'%-16f'#9'%-16f',
+        Writeln(F, Format(' %-16s'#9'%-16g'#9'%-16g',
           [slist[j],aVertex^.X,aVertex^.Y]));
         aVertex := aVertex^.Next;
       end;

@@ -418,8 +418,8 @@ begin
     aMapLabel := MapLabel(Index);
     PropList.Clear;
     PropList.Add(GetID(LABELS,Index));
-    PropList.Add(Format('%f',[aMapLabel.X]));
-    PropList.Add(Format('%f',[aMapLabel.Y]));
+    PropList.Add(Format('%g',[aMapLabel.X]));
+    PropList.Add(Format('%g',[aMapLabel.Y]));
     if aMapLabel.Anchor = nil then PropList.Add('')
     else PropList.Add(aMapLabel.Anchor.ID);
     PropList.Add(MeterTypes[aMapLabel.MeterType]);
@@ -499,9 +499,9 @@ begin
     PropList.Clear;
     PropList.Add(aNode.ID);
     if aNode.X = MISSING then PropList.Add('')
-    else PropList.Add(Format('%f',[aNode.X]));
+    else PropList.Add(Format('%g',[aNode.X]));
     if aNode.Y = MISSING then PropList.Add('')
-    else PropList.Add(Format('%f',[aNode.Y]));
+    else PropList.Add(Format('%g',[aNode.Y]));
     case Ntype of
       JUNCS:   last := JUNC_SRCQUAL_INDEX;
       RESERVS: last := RES_SRCQUAL_INDEX;
