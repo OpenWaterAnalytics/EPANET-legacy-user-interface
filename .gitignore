@@ -1,0 +1,15 @@
+# Compiled Object files
+*.dcu
+
+# Precompiled Headers
+
+# Compiled Dynamic libraries
+*.dll
+
+# Compiled Static libraries
+
+# Executables
+*.exe
+
+# build products
+
